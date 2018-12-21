@@ -23,7 +23,7 @@ except AttributeError:
 
 # crop extension module
 _statmechtools = Extension("_statmechtools",
-                   ["convolution.i","convolution.cpp"],
+                   ["convolution.i","src/convolution.cpp"],
                    include_dirs = [numpy_include],
                    extra_compile_args = ["--verbose", "-std=c++11", "-fopenmp"],
                   libraries=[],

@@ -1,7 +1,7 @@
 %module convolution
 %{
 #include <errno.h>
-#include "convolution.h"
+#include "src/convolution.h"
 
 #define SWIG_FILE_WITH_INIT
 %}
@@ -58,4 +58,4 @@
 %apply (double** ARGOUTVIEWM_ARRAY2, int* DIM1, int* DIM2) {(double **data_out, int *dim1_out, int *dim2_out)}
 
 
-%include "convolution.h"
+%include "src/convolution.h"
