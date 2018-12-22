@@ -9,6 +9,10 @@ https://stackoverflow.com/questions/16377503/use-swig-to-wrap-c-vector-as-python
 https://scipy-cookbook.readthedocs.io/items/SWIG_Memory_Deallocation.html
 
 
+# numpy.i
+https://github.com/numpy/numpy
+
+
 # Pointer
 if pointer or reference for an array is needed use naked array.
 
@@ -27,3 +31,7 @@ changed to "statmechtools" for statistical mechanics tools
 
 # Docstring is included
 http://www.swig.org/Doc2.0/Python.html#Python_nn65
+
+
+# Install python modules to the system
+https://www.osc.edu/resources/getting_started/howto/howto_install_your_own_python_modules

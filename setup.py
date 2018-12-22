@@ -21,14 +21,18 @@ try:
 except AttributeError:
     numpy_include = numpy.get_numpy_include()
 
+# command line arguments. used for compiling and linking
+extra_cmd_args = ["-std=c++11", "-fopenmp"]
+
 # crop extension module
 _statmechtools = Extension("_statmechtools",
                    ["convolution.i","src/convolution.cpp"],
                    include_dirs = [numpy_include],
-                   extra_compile_args = ["--verbose", "-std=c++11", "-fopenmp"],
-                  libraries=[],
-                  language="c++",  # so that the compiler knows about the language
-                  extra_link_args=["-std=c++11"]
+                   libraries=[],
+                   language="c++",  # so that the compiler knows about the language
+                   extra_compile_args = extra_cmd_args,                 
+                   extra_link_args= extra_cmd_args,
+                   swig_opts=['-c++']
                    )
 
 # NumyTypemapTests setup
