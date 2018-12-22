@@ -14,7 +14,8 @@ g++ -fPIC -c -std=c++11 -fopenmp src/convolution.cpp convolution_wrap.cxx  -I/us
 
 # linking
 echo linking .........................................
-g++ -fopenmp -shared  convolution.o convolution_wrap.o -o _convolution.so -lstdc++
+# -o modulename.so
+g++ -fopenmp -shared  convolution.o convolution_wrap.o -o _statmechtools.so -lstdc++
 
 
 echo removing redundant files.........................

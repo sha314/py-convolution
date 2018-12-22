@@ -1,4 +1,4 @@
-%module convolution
+%module(docstring="A module to help perform statistical operation. Specifically convolution  using parallel computation tool OpenMP") statmechtools
 %{
 #include <errno.h>
 #include "src/convolution.h"

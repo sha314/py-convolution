@@ -1,6 +1,10 @@
-import convolution as stm
+import statmechtools as stm
 import numpy as np
 
+
+print("printing help")
+help(stm)
+help(stm.convolve2d)
 
 # a = np.linspace(0, 1, 20)
 
