@@ -813,6 +813,14 @@ convolve1d = _statmechtools.convolve1d
 def convolve2d(data_in, thread_count):
     return _statmechtools.convolve2d(data_in, thread_count)
 convolve2d = _statmechtools.convolve2d
+
+def convolve1d_fast(data, thread_count=1, threshold=1e-15):
+    return _statmechtools.convolve1d_fast(data, thread_count, threshold)
+convolve1d_fast = _statmechtools.convolve1d_fast
+
+def convolve2d_fast(data_in, thread_count=1, threshold=1e-15):
+    return _statmechtools.convolve2d_fast(data_in, thread_count, threshold)
+convolve2d_fast = _statmechtools.convolve2d_fast
 # This file is compatible with both classic and new-style classes.
 
 

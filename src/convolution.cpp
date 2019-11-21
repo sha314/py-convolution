@@ -240,9 +240,9 @@ void convolve2d(
 ***/
 void convolve1d_fast(
     double *data, int columns,
-    int thread_count,
-    double **data_out, int *dim_out, double threshold)
-{
+    double **data_out, int *dim_out,
+    int thread_count, double threshold
+    ){
     /**
      arr must be a naked array. otherwise error occurs. 
      reason -> python internally tries to free up memories
@@ -345,9 +345,8 @@ void convolve1d_fast(
 ***/
 void convolve2d_fast(
     double *data_in, int n_rows, int n_columns,
-    int thread_count,
     double **data_out, int *dim1_out, int *dim2_out,
-    double threshold
+    int thread_count, double threshold
     ){
     /**
      arr must be a naked array. otherwise error occurs. 
